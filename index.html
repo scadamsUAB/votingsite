@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]>      <html class="no-js"> <![endif]-->
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title></title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="">
+        <script type="text/javascript" src="src/index.js"></script>
+        <script type="text/javascript" src="src/utils.js"></script>
+      <script type="text/javascript" src="node_modules/web3/dist/web3.min.js"></script>
+    
+        
+    </head>
+    <style>
+        
+        .testid {
+          max-width: 1200px;
+          margin: auto;
+          background-color: dimgrey;
+          text-align: center;
+          position: absolute;
+  left: 50%;
+  top: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+           
+           
+        }
+        </style>
+    <body text="#ffffff" style="background-image: url('https://pixelplantsnftminting.netlify.app/config/images/bg.png');">
+        
+        <div class="testid" >
+        <!--[if lt IE 7]>
+            <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="#">upgrade your browser</a> to improve your experience.</p>
+        <![endif]-->
+        Welcome to the Voting DAPP. 
+        <br>  <br>
+        <button class="enableEthereumButton" onclick="EnableSGB()"">Enable Songbird Network</button>
+
+        <br>  <br>
+        This application is connected to the Songbird Network Smart Contract to handle voting based on the ownership of Pixel Plant NFTs
+        <h2> <u>>How It Works</u></h2> 
+        The Smart contract has been loaded with the addresses of all Pixel Plant NFT holders.  Only these individuals are elligible to vote. 
+        <br>  <br>
+        In addition,  If you hold more than one NFT, you have more voting power (i.e. if you have 2 your vote counts as 2 votes, if you have 3 it counts as 3 votes etc..)
+        <br>  <br>
+        Only one selection can be made per user and all of your votes will go to that selection. 
+        <br>   <br>When voting closes, the winning option will be selected. 
+        
+        <br> <br>This vote is to determine what charity the initial Pixel Plant Mint for April will receive the donation. 
+
+        <br> <br>Below is a list of the charity candidates and a link to their profile on Charity Navigator
+        <ul>
+            <li><a href ="https://www.charitynavigator.org/ein/134075779">Pure Earth</a></li>
+            <li><a href="https://www.charitynavigator.org/ein/222897204">Clean Ocean Action</a></li>
+            <li><a href = "https://www.charitynavigator.org/ein/133798288">Earth Day Network</a></li>
+            <li><a href="https://www.charitynavigator.org/ein/941730465">EarthJustice</a></li>
+            <li><a href= "https://www.charitynavigator.org/ein/931050144">Ecotrust</a></li>
+        </ul>
+
+        <br> <br> Select an option from the drop down and click submit.  Sign the transaction and you are Done. 
+
+        <br> <br> Thank you for being part of the Pixel Plant Initial Mint
+        <br><br>
+        <label for="options">Choose a Charity:</label>
+
+        <select name="options" id="options">
+          <option value=0>Pure Earth</option>
+          <option value=1>Clean Ocean Action</option>
+          <option value=3>Earth Day Network</option>
+          <option value=4>EarthJustice</option>
+          <option value=5>Ecotrust</option>
+        </select> 
+        <br> <br>
+        <button id="submitButton" onclick="submit()">submit</button>
+    </div> 
+    </body>
+</html>
